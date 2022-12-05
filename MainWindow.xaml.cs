@@ -23,7 +23,12 @@ namespace CsharpWpf01
         public MainWindow()
         {
             InitializeComponent();
-            Console.WriteLine("Hello everyone");
+          
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            listbox1.Items.Add(textBox1.Text);
         }
     }
 }
