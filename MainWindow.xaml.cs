@@ -23,6 +23,7 @@ namespace CsharpWpf01
         public MainWindow()
         {
             InitializeComponent();
+            Console.WriteLine("Hello everyone");
         }
     }
 }
