@@ -7,10 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox Margin="10,10,0,3" Name="listbox1" HorizontalAlignment="Right" VerticalAlignment="Top" Width="240" Height="200"></ListBox>
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="8,14,0,0" Name="textBox1" VerticalAlignment="Top" Width="127" />
-        <Button Height="23" Margin="140,14,0,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76" Click="Button1_Click">Add Item</Button>
-
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="659*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Welcome to B2A Family" Margin="13,8,383,0" Height="92" VerticalAlignment="Top" FontSize="23"  />
+        <ListBox Margin="7,212,0,0" Name="listbox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Height="200"></ListBox>
+        <ListBox   Margin="273,213,0,0" Name="listbox2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Height="200"></ListBox>
+        <TextBox x:Name="textBox1" Background="Transparent" Height="23" HorizontalAlignment="Left" Margin="9,109,0,0" Text="Enter your name" VerticalAlignment="Top" Width="240" />
+        <Button Height="23" Margin="7,174,0,0" Name="button1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76" Click="Button1_Click" RenderTransformOrigin="0.506,1.43">Add Item</Button>
+        <Button Height="23" Margin="169,172,0,0" Name="button2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76" Click="Button2_Click">Delete</Button>
+        <Button Height="23" Margin="272,170,0,0" Name="button3" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76" Click="Button3_Click">Restore</Button>
+        <Button Height="23" Margin="440,171,0,0" Name="button4" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76" RenderTransformOrigin="0.491,3.401" Click="Button4_Click" >Flush</Button> 
 
     </Grid>
+
 </Window>
